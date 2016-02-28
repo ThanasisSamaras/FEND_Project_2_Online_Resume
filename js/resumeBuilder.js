@@ -15,7 +15,7 @@ var bio = {
 	"welcomeMessage" : "Lorem ipsum dolor sit amet.",
 	"biopic" : "images/fry.jpg",
 	"skills": ["awesomeness", "programming", "JS", "web design", "product managment", "agile methodologies"]
-}
+};
 
 /*
 Education object
@@ -43,11 +43,11 @@ var education = {
 		{
 			"title" : "JavaScript Crash Course",
 			"school" : "Udacity",
-			"dates" : 2016,
+			"date" : 2016,
 			"url" : "www.udacity.com/course/ud804"
 		}
 	]
-}
+};
 
 /*
 Work object
@@ -59,23 +59,31 @@ var work = {
 			"title" : "Junior Product Manager",
 			"location" : "Athens",
 			"dates" : "2014-Present",
-			"description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." + 
-			" Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." + 
-			" Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." + 
-			" Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+			"description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit," + 
+			" sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." + 
+			" Ut enim ad minim veniam, quis nostrud exercitation ullamco" + 
+			" laboris nisi ut aliquip ex ea commodo consequat." + 
+			" Duis aute irure dolor in reprehenderit in voluptate" + 
+			" velit esse cillum dolore eu fugiat nulla pariatur." + 
+			" Excepteur sint occaecat cupidatat non proident," + 
+			" sunt in culpa qui officia deserunt mollit anim id est laborum."
 		},
 		{
 			"employer" : "National Bank of Greece",
 			"title" : "Mobile Payments Intern",
 			"location" : "Athens",
 			"dates" : "2013",
-			"description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." + 
-			" Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." + 
-			" Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." + 
-			" Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+			"description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit," + 
+			" sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." + 
+			" Ut enim ad minim veniam, quis nostrud exercitation ullamco" + 
+			" laboris nisi ut aliquip ex ea commodo consequat." + 
+			" Duis aute irure dolor in reprehenderit in voluptate" + 
+			" velit esse cillum dolore eu fugiat nulla pariatur." + 
+			" Excepteur sint occaecat cupidatat non proident," + 
+			" sunt in culpa qui officia deserunt mollit anim id est laborum."
 		}
 	]
-}
+};
 
 /*
 Projects object
@@ -85,10 +93,14 @@ var projects = {
 		{
 			"title" : "Sample Project 2",
 			"dates" : "2015",
-			"description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." + 
-			" Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." + 
-			" Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." + 
-			" Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+			"description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit," + 
+			" sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." + 
+			" Ut enim ad minim veniam, quis nostrud exercitation ullamco" + 
+			" laboris nisi ut aliquip ex ea commodo consequat." + 
+			" Duis aute irure dolor in reprehenderit in voluptate" + 
+			" velit esse cillum dolore eu fugiat nulla pariatur." + 
+			" Excepteur sint occaecat cupidatat non proident," + 
+			" sunt in culpa qui officia deserunt mollit anim id est laborum.",
 			"images" : [
 				"http://www.webfx.me/wp-content/uploads/2015/08/web_development-img.jpg", 
 				"https://d21osts7471xgc.cloudfront.net/wp-content/uploads/2014/09/Web-Development-350x200.jpg?094df1"
@@ -97,15 +109,21 @@ var projects = {
 		{
 			"title" : "Sample Project 1",
 			"dates" : "2014",
-			"description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." + 
-			" Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+			"description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit," + 
+			" sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." + 
+			" Ut enim ad minim veniam, quis nostrud exercitation ullamco" + 
+			" laboris nisi ut aliquip ex ea commodo consequat." + 
+			" Duis aute irure dolor in reprehenderit in voluptate" + 
+			" velit esse cillum dolore eu fugiat nulla pariatur." + 
+			" Excepteur sint occaecat cupidatat non proident," + 
+			" sunt in culpa qui officia deserunt mollit anim id est laborum.",
 			"images" : [
 				"http://i0.wp.com/www.devstrend.com/wp-content/uploads/2015/06/15-Directives-to-Extend-Your-Angular.js-Apps.jpg?resize=350%2C200", 
 				"https://wpcron.files.wordpress.com/2015/08/logo_og.png?w=350&h=200&crop=1"
 			]
 		}
 	]
-}
+};
 
 /*
 Display bio info
@@ -146,7 +164,7 @@ bio.display = function() {
 			$("#skills").append(formattedSkills);
 		}
 	}
-}
+};
 bio.display();
 
 /*
@@ -154,7 +172,7 @@ Display work
 */
 work.display = function() {
 
-	for (job in work.jobs) {
+	for (var job in work.jobs) {
 		$("#workExperience").append(HTMLworkStart);
 
 		var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
@@ -171,7 +189,7 @@ work.display = function() {
 		var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
 		$(".work-entry:last").append(formattedDescription);
 	}
-}
+};
 work.display();
 
 /*
@@ -179,7 +197,7 @@ Display projects
 */
 projects.display = function() {
 
-	for (project in projects.projects) {
+	for (var project in projects.projects) {
 		$("#projects").append(HTMLprojectStart);
 
 		var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
@@ -192,13 +210,13 @@ projects.display = function() {
 		$(".project-entry:last").append(formattedDescription);
 
 		if (projects.projects[project].images.length > 0) {
-			for (image in projects.projects[project].images) {
+			for (var image in projects.projects[project].images) {
 				var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[image]);
 				$(".project-entry:last").append(formattedImage);
 			}
 		}
 	}
-}
+};
 projects.display();
 
 /*
@@ -206,7 +224,7 @@ Display education
 */
 education.display = function() {
 
-	for (school in education.schools) {
+	for (var school in education.schools) {
 		$("#education").append(HTMLschoolStart);
 
 		var formattedName = HTMLschoolName.replace("%data%", education.schools[school].name);
@@ -221,7 +239,7 @@ education.display = function() {
 		$(".education-entry:last").append(formattedLocation);
 
 		if (education.schools[school].majors.length > 0)  {
-			for (major in education.schools[school].majors) {
+			for (var major in education.schools[school].majors) {
 				var formattedMajor = HTMLschoolMajor.replace("%data%", education.schools[school].majors[major]);
 				$(".education-entry:last").append(formattedMajor);
 			}
@@ -233,7 +251,7 @@ education.display = function() {
 	*/
 	$("#education").append(HTMLonlineClasses);
 
-	for (mooc in education.onlineCourses) {
+	for (var mooc in education.onlineCourses) {
 		$("#education").append(HTMLschoolStart);
 
 		var formattedTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[mooc].title);
@@ -241,13 +259,13 @@ education.display = function() {
 		var formattedTitleSchool = formattedTitle + formattedSchool;
 		$(".education-entry:last").append(formattedTitleSchool);
 
-		var formattedDates = HTMLonlineDates.replace("%data%", education.onlineCourses[mooc].dates);
+		var formattedDates = HTMLonlineDates.replace("%data%", education.onlineCourses[mooc].date);
 		$(".education-entry:last").append(formattedDates);
 
 		var formattedURL = HTMLonlineURL.replace("%data%", education.onlineCourses[mooc].url);
 		$(".education-entry:last").append(formattedURL);
 	}
-}
+};
 education.display();
 
 /*
